@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-#get_ipython().system('pip install dash')
-
-
-# In[2]:
-
-
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -20,7 +8,7 @@ import plotly.express as px
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
-# In[3]:
+
 
 
 df = pd.read_csv(r'C:\Users\tobis\Downloads\electricity_df_day.csv')
