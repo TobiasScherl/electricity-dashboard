@@ -4,7 +4,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install dash')
+#get_ipython().system('pip install dash')
 
 
 # In[2]:
@@ -31,7 +31,7 @@ df_hour = pd.read_csv(r'C:\Users\tobis\Downloads\electricity_df_hour.csv')
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
+#server = app.server
 
 fig1 = px.bar(df, x="dayofweek", y="Consumption [Wh]")
 fig2 = px.bar(df_hour, x="hour", y="Consumption [Wh]")
