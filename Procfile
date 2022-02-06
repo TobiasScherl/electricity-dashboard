@@ -1,1 +1,1 @@
-web: gunicorn electricity_dashboard:server
+web: gunicorn electricity_dashboard:app
