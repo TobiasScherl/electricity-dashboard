@@ -9,11 +9,11 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
 
-url1 = 'https://github.com/TobiasScherl/electricity-dashboard/blob/main/electricity_df_hour.csv'
-url2 = 'https://github.com/TobiasScherl/electricity-dashboard/blob/main/electricity_df_day.csv'
+url1 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_day.csv'
+url2 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_hour.csv'
 
-df_hour = pd.read_csv(url1, index_col=0)
-df_day = pd.read_csv(url2, index_col=0)
+df_day = pd.read_csv(url1, index_col=0)
+df_hour = pd.read_csv(url2, index_col=0)
 
 
 
