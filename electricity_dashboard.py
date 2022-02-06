@@ -9,19 +9,18 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
 
+url1 = 'https://github.com/TobiasScherl/electricity-dashboard/blob/main/electricity_df_hour.csv'
+url2 = 'https://github.com/TobiasScherl/electricity-dashboard/blob/main/electricity_df_day.csv'
 
+df_hour = pd.read_csv(url1, index_col=0)
+df_day = pd.read_csv(url2, index_col=0)
 
-df = pd.read_csv(r'C:\Users\tobis\Downloads\electricity_df_day.csv')
-df_hour = pd.read_csv(r'C:\Users\tobis\Downloads\electricity_df_hour.csv')
-
-
-# In[9]:
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
-fig1 = px.bar(df, x="dayofweek", y="Consumption [Wh]")
+fig1 = px.bar(df_day, x="dayofweek", y="Consumption [Wh]")
 fig2 = px.bar(df_hour, x="hour", y="Consumption [Wh]")
 
 
@@ -55,14 +54,9 @@ app.layout = html.Div(children=[
 ])
 
 
-# In[10]:
-
 
 if __name__ == '__main__':
     app.run_server()
-
-
-# In[ ]:
 
 
 
