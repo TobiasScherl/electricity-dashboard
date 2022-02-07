@@ -18,6 +18,7 @@ df_day = pd.read_csv(url1)
 df_hour = pd.read_csv(url2)
 df_app = pd.read_csv(url3)
 df_type = pd.read_csv(url4)
+df_type = df_type.sort_values('Power [W]')
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
