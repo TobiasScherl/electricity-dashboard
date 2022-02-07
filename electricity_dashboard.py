@@ -11,8 +11,8 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 url1 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_day.csv'
 url2 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_hour.csv'
-url3 = 
-url4 =
+url3 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_app.csv'
+url4 = 'https://raw.githubusercontent.com/TobiasScherl/electricity-dashboard/main/electricity_df_type.csv'
 
 df_day = pd.read_csv(url1)
 df_hour = pd.read_csv(url2)
